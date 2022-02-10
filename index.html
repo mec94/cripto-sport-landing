@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cripto Sport - Home</title>
+</head>
+<body>
+    <header>
+        <nav class="main-nav container">
+            <div class="mobile">
+                <div class="mobile-icon">
+                    <p class="menu__title">Cripto</p>
+                    <div class="menu__icon">
+                        <img src="./images/cs-icon.svg" />
+                    </div>
+                    <p class="menu__title">Sport</p>
+                </div>
+                <div class="hamburger-menu">
+                    <span class="hamburger-menu__bar hamburger-menu__bar--display"></span>
+                    <span class="hamburger-menu__bar"></span>
+                    <span class="hamburger-menu__bar"></span>
+                </div>
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-menu__item">
+                    <a class="link" href="#">Inicio</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="link" href="#">Innovación</a>
+                </li>
+                <li class="nav-menu__item nav-menu__item--center">
+                    <p class="menu__title">Cripto</p>
+                    <div class="menu__icon">
+                        <img src="./images/cs-icon.svg" />
+                    </div>
+                    <p class="menu__title">Sport</p>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="link" href="#">Planes</a>
+                </li>
+                <li class="nav-menu__item">
+                    <a class="link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="main-content container">
+            <div class="main-content__about">
+                <h1 class="main-content__title">Llegan las criptos al deporte</h1>
+                <p class="main-content__text"></p>
+            </div>
+            <div class="newsletter">
+                <p class="newsletter__cta">Suscribete al Newsletter</p>
+                <form class="newsletter__form" action="./newsletter-subscription.html">
+                    <label for="email">Tu correo</label>
+                    <input type="email" name="email" placeholder="correo@ejemplo.com" />
+
+                    <label for="fname">Nombre</label>
+                    <input type="text" name="fname" />
+
+                    <label for="lname">Apellidos</label>
+                    <input type="text" name="lname" />
+                    <label for="ejercicio">Cuantos dias por semana ejercitas</label>
+                    <input type="range" name="ejercicio" id="ejercicioSemanal" onchange="rutinaEjercicio(this.value)" min="1" max="7" value="1"/>
+                    <p id="diasEjercicio">1 día por semana</p>
+                    <div class="newsletter-checkbox">
+                        <p class="newsletter-checkbox__title">Nos conoces por:</p>
+                        <label for="google">Google</label>
+                        <input type="checkbox" name="google" value="Google" />
+                        <label for="google">Redes</label>
+                        <input type="checkbox" name="redes" value="Redes Sociales" />
+                        <label for="podcast">Podcast</label>
+                        <input type="checkbox" name="podcast" value="Podcast Fitness" />
+                    </div>
+                    <input type="submit" value="Suscribirse" />
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="social-media container">
+            <h2 class="social-media__about">Nuestras redes</h2>
+            <div class="social-media__icon">
+                <a class="link link--black" href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="social-media__icon">
+                <a class="link link--black" href="#">
+                    <i class="fa-brands fa-whatsapp"></i>
+                </a>
+            </div>
+            <div class="social-media__icon">
+                <a class="link link--black" href="#">
+                    <i class="fa-brands fa-facebook-square"></i>
+                </a>
+            </div>
+            <div class="social-media__icon">
+                <a class="link link--black" href="#">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </section>
+    </footer>
+    <script src="https://kit.fontawesome.com/be8d402dc7.js" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
